@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-# This script is displaying files in current dir without task numbers
+#special ls
 
-for f in *
+for i in *
 do
-	echo "${f/*-/}"
+    echo "$i" | cut -d '-' -f 2;
 done
